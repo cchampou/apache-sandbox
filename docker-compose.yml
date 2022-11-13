@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  web:
+    build:
+      context: .
+    container_name: apache-sanbox
+    volumes:
+      - ./httpdocs:/usr/local/apache2/htdocs:ro
+    ports:
+      - "80:80"
