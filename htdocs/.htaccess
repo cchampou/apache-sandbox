@@ -1,4 +1,1 @@
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^fr\.
-RewriteCond %{REQUEST_URI} ^/blog/(.*)?
-RewriteRule ^ https://en.cchampou.me/blog/%1 [R=302,L]
+Allow from all
