@@ -6,6 +6,6 @@ services:
       context: .
     container_name: apache-sanbox
     volumes:
-      - ./httpdocs:/usr/local/apache2/htdocs:ro
+      - ./htdocs:/usr/local/apache2/htdocs:ro
     ports:
       - "80:80"
